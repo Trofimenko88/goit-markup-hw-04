@@ -308,11 +308,7 @@ margin-bottom: 30px;
 
 
 
-/*Footer*/
 
-.footer {
-  background-color: #2f303a;
-}
 
     /*Страница Портфолио*/
 
@@ -586,7 +582,11 @@ color: currentColor;
   height: 60px;
   fill: currentColor;
 }
+/*Footer*/
 
+.footer {
+  background-color: #2f303a;
+}
 
 /*Footer logo*/
 
@@ -629,6 +629,25 @@ color: currentColor;
   /* or 171% */
   letter-spacing: 0.03em;
 }
+.footer-item {
+  margin-bottom: 9px;
+}
+.footer-mail:hover,
+.footer-tel:hover, 
+.footer-mail:focus,
+.footer-tel:focus {
+  color: #188CE8;
+}
+.geolocation {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  color: var(--footer-logo-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
 
 .footer-mail,
 .footer-tel {
@@ -648,61 +667,37 @@ color: currentColor;
   padding-left: 70px;
 }
 .footer-title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
 }
 .footer-social-list {
-  width: 206px;
-  height: 44px;
   display: flex;
-  margin-top: 20px;
+  justify-content: center;
 }
-.footer-social-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    border: none;
-    width: 44px;
-    height: 44px;
-    color: #AFB1B8;
-    border-radius: 50%;
-  }
+
 .footer-social-item:not(:last-child) {
     margin-right: 10px;
 }
-
-.footer-social-button:hover,
-.footer-social-button:focus  {
-  background-color: #2196f3;
-}
-
-
 .footer-social-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  border: none;
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
 
 .footer-button-icon {
   fill: #FFFFFF;
 }
-
-.footer-button-icon:hover {
-  fill: #FFFFFF;
+.footer-social-button:hover,
+.footer-social-button:focus {
+  background-color: #2196F3;
 }
 
 
